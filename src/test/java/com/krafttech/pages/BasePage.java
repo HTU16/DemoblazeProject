@@ -19,8 +19,11 @@ public abstract class BasePage {       //  //testNG de testBase karşılığı..
         PageFactory.initElements(Driver.get(), this);
     }
 
-
     @FindBy(id = "login2")
     public WebElement login_homePage_loc;
-
+    @FindBy(xpath = "(//a[@class='nav-link'])[1]") // -> //a[text()='Home ']
+    public WebElement homeLink_loc;
+    @FindBy(xpath = "//a[text()='Cart']")
+    public WebElement cart_loc;
 }
+

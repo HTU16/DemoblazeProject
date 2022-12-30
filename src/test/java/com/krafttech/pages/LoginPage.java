@@ -24,7 +24,6 @@ public class LoginPage extends BasePage {
 
         String username = ConfigurationReader.get("username");
         String password = ConfigurationReader.get("password");
-        login_homePage_loc.click();
         loginusername_loc.sendKeys(username);
         loginpassword_loc.sendKeys(password);
         loginBtn_loc.click();

@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features =  "src/test/resources/features",
         glue = "com/krafttech/step_Def",
         dryRun = false,
-        tags = "@negativeScenario"
+        tags = "@wipp"
 )
 
 public class CukesRunner {
